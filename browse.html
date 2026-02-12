@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Nguyen Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Custom Animations */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 1s ease-out;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'netflix-red': '#E50914',
+                        'netflix-black': '#141414',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#141414] text-white antialiased no-scrollbar">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 transition-colors duration-300 ease-in-out px-4 md:px-16 py-4 flex items-center justify-between bg-gradient-to-b from-black/80 to-transparent"
+        id="navbar">
+        <div class="flex items-center space-x-8">
+            <div class="flex items-center gap-4">
+                <a class="text-netflix-red text-2xl md:text-3xl font-bold uppercase cursor-pointer mr-6 font-bebas tracking-wider z-50"
+                    href="index.html">CHI NGUYEN</a>
+            </div>
+            <div class="hidden md:flex space-x-5 text-sm font-medium text-gray-300">
+                <a class="text-white font-bold cursor-default" href="browse.html">Home</a>
+                <a target="_blank" class="hover:text-gray-400 transition"
+                    href="https://www.linkedin.com/in/chi-nguyen-13993061/">LinkedIn</a>
+                <!--<a target="_blank" class="hover:text-gray-400 transition" href="#">Publications</a>
+                <a target="_blank" class="hover:text-gray-400 transition" href="#">Resources</a>-->
+            </div>
+        </div>
+        <div class="flex items-center space-x-4 text-white">
+            <i data-lucide="search" class="w-5 h-5 cursor-pointer hover:text-gray-300 transition"></i>
+            <i data-lucide="bell" class="w-5 h-5 cursor-pointer hover:text-gray-300 transition"></i>
+            <img src="https://media.istockphoto.com/id/1296141686/vector/black-cat-kitten-head-face-silhouette-looking-up-kawaii-animal-cute-cartoon-baby-character.jpg?s=612x612&w=0&k=20&c=Xnb_4HRj7srKP3SF__uyCe7Jpsw58LBLnpH6LJrfzYM="
+                alt="Profile" class="w-8 h-8 rounded cursor-pointer">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <div class="relative min-h-[95vh] w-full bg-zinc-900">
+        <!-- Background Image -->
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img alt="Chi Nguyen Cover" class="object-cover object-top opacity-85 w-full h-full"
+                src="https://scontent.fbru2-1.fna.fbcdn.net/v/t1.6435-9/70860782_10157905979888754_5776704882538971136_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=juBULVWZUe8Q7kNvwG6fJhj&_nc_oc=AdlrZdYuyQU8CCFcMMBrhW8llFVodWyd43eXTXl_FJv0t7UaZR3bWsJ6Z8gvM2MEIekkHDpqg4O2uXmfZh-VnkA4&_nc_zt=23&_nc_ht=scontent.fbru2-1.fna&_nc_gid=IdEEyx-XTUhxRdjQOYUkgg&oh=00_AfuXoEpgJhV4VxxFKccIskczZF3OtAeIyTHz-Gr38r0-JA&oe=69B539C6" />
+        </div>
+        <!-- Gradients -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
+        <div class="absolute bottom-0 w-full h-[55%] md:h-40 bg-gradient-to-t from-[#141414] to-transparent"></div>
+
+        <!-- Hero Content -->
+        <div
+            class="absolute top-[20%] md:top-[25%] left-4 md:left-12 lg:left-16 w-full md:w-[45%] lg:w-[40%] space-y-4 md:space-y-6 z-30 pr-4 md:pr-0">
+            <div class="text-white/80 font-semibold mb-6 animate-fade-in tracking-wider"> Hi Curious visitor, what do
+                you want
+                to know?
+            </div>
+            <h1
+                class="text-5xl md:text-7xl lg:text-8xl font-normal text-white drop-shadow-lg font-bebas tracking-wide uppercase leading-[0.9]">
+                Chi Nguyen</h1>
+
+            <div
+                class="flex items-center space-x-2 md:space-x-4 text-xs md:text-base font-semibold text-white/90 flex-wrap gap-y-2">
+                <div class="flex items-center gap-1">
+                    <span class="bg-[#F5C518] text-black px-1.5 py-0.5 rounded text-[10px] md:text-xs font-bold">Real
+                        World Evidence
+                    </span>
+                    <span>9.9/10</span>
+                </div>
+                <span class="text-green-400 whitespace-nowrap">Epidemiologist</span>
+                <span class="border border-gray-400 px-2 rounded text-[10px] md:text-xs">1991</span>
+                <span class="bg-red-600 px-2 rounded text-[10px] md:text-xs">HD</span>
+            </div>
+
+            <p
+                class="text-white text-sm md:text-lg drop-shadow-sm text-gray-200 max-w-[95%] md:max-w-full leading-relaxed">
+                Epidemiologist who's worked on everything from COVID-19 vaccines to antimicrobial
+                resistance across Asia, Europe, and Africa.
+                I help healthcare researchers use AI to automate tedious tasks and focus on work they love, without
+                compromising scientific rigor.
+            </p>
+
+            <div class="flex items-center space-x-3 pt-2">
+                <a href="mailto:nguyen.yen.chi123@gmail.com"
+                    class="bg-white text-black px-6 py-2 md:px-8 md:py-3 rounded font-bold flex items-center hover:bg-opacity-80 transition transform hover:scale-105 text-sm md:text-base decoration-none">
+                    <i data-lucide="play" class="w-4 h-4 mr-2 fill-black"></i> Contact
+                </a>
+
+                <!--<button
+                    class="bg-gray-500/40 backdrop-blur-sm text-white px-6 py-2 md:px-8 md:py-3 rounded font-bold flex items-center hover:bg-gray-500/30 transition transform hover:scale-105 text-sm md:text-base">
+                    <i data-lucide="info" class="w-4 h-4 mr-2"></i> My CV
+                </button>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <!-- Adjusted negative margin to prevent overlap with Hero text -->
+    <main class="relative pb-20 lg:space-y-20 z-16 pt-4">
+
+        <!-- Row 1: Systematic Literature Review -->
+        <div class="space-y-2 px-4 md:px-16 my-8">
+            <h2
+                class="text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl cursor-pointer">
+                Literature Review</h2>
+            <div class="group relative md:-ml-2">
+                <!-- Left Button -->
+                <button
+                    class="absolute top-0 bottom-0 left-0 z-50 m-auto h-full w-14 cursor-pointer opacity-0 transition hover:bg-black/70 group-hover:opacity-100 hidden md:flex items-center justify-center"
+                    onclick="scrollRow('row-1', 'left')">
+                    <i data-lucide="chevron-left"
+                        class="text-white w-12 h-12 md:w-16 md:h-16 transition transform hover:scale-125"></i>
+                </button>
+
+                <!-- Slider Wrapper -->
+                <div class="flex items-center space-x-2 overflow-x-scroll scrollbar-hide md:p-2 scroll-smooth"
+                    id="row-1">
+
+                    <!-- Card 1 -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="Burden of ambient air pollution in Vietnam"
+                        data-image="https://en-cdn.nhandan.vn/images/e4c11c0866b7902d2502efa9d68c77b5699140f5e49dc611d1adc0c5dee0af5e0df69d2b071716a98e173b288c80158a44e2ff35e75ad315a67044ab42d3111b/khong-744-534.jpg"
+                        data-description="A scoping review on the existing evidence of health impacts of air pollution in Viet Nam, to strengthen the national evidence base for health-informed air quality management."
+                        data-match="98% Match" data-genre="Systematic Literature Review" data-location="Vietnam"
+                        data-audience="Policy Makers, Researchers" data-link="#">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiScqyhJeRDg7Mj7hxS0PDNtU_tyTwi38dQ&s"
+                            class="rounded-md object-cover w-full h-full" alt="Air Pollution">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <button
+                                    class="w-6 h-6 bg-white rounded-full flex items-center justify-center hover:bg-neutral-300"><i
+                                        data-lucide="play" class="w-3 h-3 text-black fill-black"></i></button>
+                                <button
+                                    class="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center text-white"><i
+                                        data-lucide="check" class="w-3 h-3"></i></button>
+                            </div>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Vietnam</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2026</span>
+                            </div>
+                            <p class="text-xs text-white font-semibold truncate">Burden of ambient air pollution in
+                                Vietnam</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: HZ vaccines CVD event -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="Herpes zoster vaccine effectiveness against cardiovascular events"
+                        data-image="https://mana.md/wp-content/uploads/2025/05/Should-You-Get-the-Zoster-Vaccine-2.png"
+                        data-description="To assess HZ vaccination effectiveness with recombinant zoster vaccine (RZV) or zoster vaccine live-attenuated (ZVL), against cardiovascular (CV) events (stroke, MI, or CV death) in adults aged ≥18 years and ≥50 years."
+                        data-match="98% Match" data-genre="Systematic Literature Review" data-location="Global"
+                        data-audience="Healthcare Professionals"
+                        data-link="https://academic.oup.com/eurheartj/article/46/Supplement_1/ehaf784.3633/8312335">
+                        <img src="https://mana.md/wp-content/uploads/2025/05/Should-You-Get-the-Zoster-Vaccine-2.png"
+                            class="rounded-md object-cover w-full h-full" alt="Air Pollution">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <button
+                                    class="w-6 h-6 bg-white rounded-full flex items-center justify-center hover:bg-neutral-300"><i
+                                        data-lucide="play" class="w-3 h-3 text-black fill-black"></i></button>
+                                <button
+                                    class="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center text-white"><i
+                                        data-lucide="check" class="w-3 h-3"></i></button>
+                            </div>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Global</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2025</span>
+                            </div>
+                            <p class="text-xs text-white font-semibold truncate">Herpes zoster vaccine effectiveness
+                                against cardiovascular events</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: The Incidence of Herpes Zoster Complications -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="The Incidence of Herpes Zoster Complications"
+                        data-image="https://images.contentstack.io/v3/assets/blt5f400315f9e4f0b3/blt5fb2f275bdb6ca12/692dc2abba187c04662a7740/blog-image_dermatology_post-shingles-complications.png?branch=production"
+                        data-description="A systematic literature review to identify and summarize the incidence of Herpes Zoster complications in different populations."
+                        data-match="98% Match" data-genre="Systematic Literature Review" data-location="Global"
+                        data-audience="Immunologists, Researchers"
+                        data-link="https://pmc.ncbi.nlm.nih.gov/articles/PMC11219681/">
+                        <img src="https://www.usdermatologypartners.com/wp-content/uploads/2024/05/Understanding-Shingles.jpg"
+                            class="rounded-md object-cover w-full h-full" alt="Air Pollution">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <button
+                                    class="w-6 h-6 bg-white rounded-full flex items-center justify-center hover:bg-neutral-300"><i
+                                        data-lucide="play" class="w-3 h-3 text-black fill-black"></i></button>
+                                <button
+                                    class="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center text-white"><i
+                                        data-lucide="check" class="w-3 h-3"></i></button>
+                            </div>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Global</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2024</span>
+                            </div>
+                            <p class="text-xs text-white font-semibold truncate">The Incidence of Herpes Zoster
+                                Complications</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: COVID-19 vaccine effectiveness against hospitalization -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="COVID-19 vaccine effectiveness against hospitalization"
+                        data-image="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iLQwwdGZJlr4/v1/-1x-1.webp"
+                        data-description="A systematic literature review to evaluate the sustained protection of primary AstraZeneca vaccines against COVID-19 hospital admissions."
+                        data-match="98% Match" data-genre="Systematic Literature Review" data-location="Europe"
+                        data-audience="Health Authorities"
+                        data-link="https://pmc.ncbi.nlm.nih.gov/articles/PMC10398604/">
+                        <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iLQwwdGZJlr4/v1/-1x-1.webp"
+                            class="rounded-md object-cover w-full h-full" alt="Air Pollution">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <button
+                                    class="w-6 h-6 bg-white rounded-full flex items-center justify-center hover:bg-neutral-300"><i
+                                        data-lucide="play" class="w-3 h-3 text-black fill-black"></i></button>
+                                <button
+                                    class="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center text-white"><i
+                                        data-lucide="check" class="w-3 h-3"></i></button>
+                            </div>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Europe</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2023</span>
+                            </div>
+                            <p class="text-xs text-white font-semibold truncate">COVID-19 vaccine effectiveness against
+                                hospitalization</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Professionalize European Public Health Workforce -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="Professionalize European Public Health Workforce"
+                        data-image="https://www.mckinsey.com/~/media/mckinsey/industries/public%20and%20social%20sector/our%20insights/building%20the%20us%20public-health%20workforce%20of%20the%20future/building%20the%20us%20public%20health%20workforce%20of%20the%20future_1282038137_thumb_1536x1536.jpg?mw=677&car=42:25"
+                        data-description="This policy brief evaluates current workforce data gaps and existing frameworks to advocate for the professionalization of the European public health workforce through the implementation of a standardized Minimum Dataset and a digital Skills Passport."
+                        data-match="98% Match" data-genre="Systematic Literature Review" data-location="Europe"
+                        data-audience="Public Health Officials"
+                        data-link="https://seejph.com/index.php/seejph/article/view/283/251">
+                        <img src="https://www.mckinsey.com/~/media/mckinsey/industries/public%20and%20social%20sector/our%20insights/building%20the%20us%20public-health%20workforce%20of%20the%20future/building%20the%20us%20public%20health%20workforce%20of%20the%20future_1282038137_thumb_1536x1536.jpg?mw=677&car=42:25"
+                            class="rounded-md object-cover w-full h-full" alt="Air Pollution">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <button
+                                    class="w-6 h-6 bg-white rounded-full flex items-center justify-center hover:bg-neutral-300"><i
+                                        data-lucide="play" class="w-3 h-3 text-black fill-black"></i></button>
+                                <button
+                                    class="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center text-white"><i
+                                        data-lucide="check" class="w-3 h-3"></i></button>
+                            </div>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Europe</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2022</span>
+                            </div>
+                            <p class="text-xs text-white font-semibold truncate">Professionalize European Public Health
+                                Workforce</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Vietnam's success story against COVID-19 -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="Vietnam's success story against COVID-19"
+                        data-image="https://www.thenation.com/wp-content/uploads/2020/04/vietnam-covid19-response-gty-img.jpg"
+                        data-description="A  review to analyze Vietnam's achievement in its early and continued success in combating COVID-19 by taking into account various aspects of its health system and experience on outbreaks that have previously occurred and how these can be applied to current COVID-19 responses."
+                        data-match="98% Match" data-genre="Systematic Literature Review" data-location="Vietnam"
+                        data-audience="Global Health Community"
+                        data-link="https://www.sciencedirect.com/science/article/pii/S2666535221000574">
+                        <img src="https://www.thenation.com/wp-content/uploads/2020/04/vietnam-covid19-response-gty-img.jpg"
+                            class="rounded-md object-cover w-full h-full" alt="Air Pollution">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <button
+                                    class="w-6 h-6 bg-white rounded-full flex items-center justify-center hover:bg-neutral-300"><i
+                                        data-lucide="play" class="w-3 h-3 text-black fill-black"></i></button>
+                                <button
+                                    class="w-6 h-6 border-2 border-gray-400 rounded-full flex items-center justify-center text-white"><i
+                                        data-lucide="check" class="w-3 h-3"></i></button>
+                            </div>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Vietnam</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2021</span>
+                            </div>
+                            <p class="text-xs text-white font-semibold truncate">Vietnam's success story against
+                                COVID-19</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Button -->
+                <button
+                    class="absolute top-0 bottom-0 right-0 z-50 m-auto h-full w-14 cursor-pointer opacity-0 transition hover:bg-black/70 group-hover:opacity-100 hidden md:flex items-center justify-center"
+                    onclick="scrollRow('row-1', 'right')">
+                    <i data-lucide="chevron-right"
+                        class="text-white w-12 h-12 md:w-16 md:h-16 transition transform hover:scale-125"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Row 2: Community-based research -->
+        <div class="space-y-2 px-4 md:px-16 my-8">
+            <h2
+                class="text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl cursor-pointer">
+                Community-based research</h2>
+            <div class="group relative md:-ml-2">
+                <!-- Left Button -->
+                <button
+                    class="absolute top-0 bottom-0 left-2 z-40 m-auto h-full w-12 cursor-pointer opacity-0 transition hover:bg-black/50 group-hover:opacity-100 hidden md:flex items-center justify-center"
+                    onclick="scrollRow('row-2', 'left')">
+                    <i data-lucide="chevron-left" class="text-white w-8 h-8"></i>
+                </button>
+
+                <div class="flex items-center space-x-2 overflow-x-scroll scrollbar-hide md:p-2 scroll-smooth"
+                    id="row-2">
+                    <!-- Card 1: IMI-VITAL project -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="Burden of infectious diseases in older adults (IMI-VITAL)"
+                        data-image="https://www.ihi.europa.eu/sites/default/files/styles/teaser_image_horizontal/public/projects/logos/vital-logo-final.png?itok=52I9Xw_bg"
+                        data-description="Burden of infectious diseases in older adults in Europe (IMI-VITAL)."
+                        data-match="95% Match" data-genre="Community-based research" data-location="Europe"
+                        data-audience="Researchers, Policy Makers" data-link="https://vital-imi.eu/">
+                        <img src="https://www.ihi.europa.eu/sites/default/files/styles/teaser_image_horizontal/public/projects/logos/vital-logo-final.png?itok=52I9Xw_bg"
+                            class="rounded-md object-cover w-full h-full" alt="VITAL">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <p class="text-xs text-white font-semibold truncate">IMI-VITAL Project</p>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="text-green-400 font-semibold">Aging population</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Europe</span>
+                                <span
+                                    class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2023-2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Cape Town study  -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="Childhood diarrhea and environmental factors in Cape Town"
+                        data-image="images/capt2.png"
+                        data-description="A community-based study to understand the Water, Sanitation, Hygiene (WASH) risk factors of diarrhoea in children under five years in slum areas in Cape Town, South Africa."
+                        data-match="95% Match" data-genre="Community-based research" data-location="South Africa"
+                        data-audience="WASH Specialists" data-link="https://pmc.ncbi.nlm.nih.gov/articles/PMC8199993/">
+                        <img src="images/capetown.jpg" class="rounded-md object-cover w-full h-full"
+                            alt="VIZIONS study">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <p class="text-xs text-white font-semibold truncate">Childhood diarrhea and environmental
+                                factors in Cape Town</p>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="text-green-400 font-semibold">Children</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">South
+                                    Africa</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2016 -
+                                    2018</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: VIZIONS study  -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="The Vietnam Initiative on Zoonotic Infections (VIZIONS)"
+                        data-image="https://vcdn1-english.vnecdn.net/2020/07/02/1-5619-1591170175-4481-1591607-5593-6120-1593665570.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=Hppk3nJzReuEK46iD5sKEw"
+                        data-description="The Vietnam Initiative on Zoonotic Infections (VIZIONS) is a multidisciplinary project aiming to understand the emergence of zoonotic viral pathogens in human populations."
+                        data-match="95% Match" data-genre="Community-based research" data-location="Vietnam"
+                        data-audience="Virologists, Epidemiologists"
+                        data-link="https://www.nature.com/articles/srep17965">
+                        <img src="https://vcdn1-english.vnecdn.net/2020/07/02/1-5619-1591170175-4481-1591607-5593-6120-1593665570.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=Hppk3nJzReuEK46iD5sKEw"
+                            class="rounded-md object-cover w-full h-full" alt="VIZIONS study">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <p class="text-xs text-white font-semibold truncate">The Vietnam Initiative on Zoonotic
+                                Infections (VIZIONS) project</p>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="text-green-400 font-semibold">General population</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Vietnam</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2012 -
+                                    2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Button -->
+                <button
+                    class="absolute top-0 bottom-0 right-2 z-40 m-auto h-full w-12 cursor-pointer opacity-0 transition hover:bg-black/50 group-hover:opacity-100 hidden md:flex items-center justify-center"
+                    onclick="scrollRow('row-2', 'right')">
+                    <i data-lucide="chevron-right" class="text-white w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Row 3: Hospital - based research
+        <div class="space-y-2 px-4 md:px-16 my-8">
+            <h2
+                class="text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl cursor-pointer">
+                Hospital-based research</h2>
+            <div class="group relative md:-ml-2">
+                 Left Button -->
+        <!--<button
+                    class="absolute top-0 bottom-0 left-0 z-50 m-auto h-full w-14 cursor-pointer opacity-0 transition hover:bg-black/70 group-hover:opacity-100 hidden md:flex items-center justify-center"
+                    onclick="scrollRow('row-3', 'left')">
+                    <i data-lucide="chevron-left"
+                        class="text-white w-12 h-12 md:w-16 md:h-16 transition transform hover:scale-125"></i>
+                </button>
+
+                <div class="flex items-center space-x-2 overflow-x-scroll scrollbar-hide md:p-2 scroll-smooth"
+                    id="row-3">
+                </div>
+                 Right Button -->
+        <!--<button
+                    class="absolute top-0 bottom-0 right-0 z-50 m-auto h-full w-14 cursor-pointer opacity-0 transition hover:bg-black/70 group-hover:opacity-100 hidden md:flex items-center justify-center"
+                    onclick="scrollRow('row-3', 'right')">
+                    <i data-lucide="chevron-right"
+                        class="text-white w-12 h-12 md:w-16 md:h-16 transition transform hover:scale-125"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Row 4: Public Engagement -->
+        <div class="space-y-2 px-4 md:px-16 my-8">
+            <h2
+                class="text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl cursor-pointer">
+                Public Engagement</h2>
+            <div class="group relative md:-ml-2">
+                <!-- Left Button -->
+                <button
+                    class="absolute top-0 bottom-0 left-0 z-50 m-auto h-full w-14 cursor-pointer opacity-0 transition hover:bg-black/70 group-hover:opacity-100 hidden md:flex items-center justify-center"
+                    onclick="scrollRow('row-4', 'left')">
+                    <i data-lucide="chevron-left"
+                        class="text-white w-12 h-12 md:w-16 md:h-16 transition transform hover:scale-125"></i>
+                </button>
+
+                <div class="flex items-center space-x-2 overflow-x-scroll scrollbar-hide md:p-2 scroll-smooth"
+                    id="row-4">
+                    <!-- Card 1: BOD dashboard -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="IMI-VITAL interactive dashboard"
+                        data-image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/EU27-2020_European_Union_map.svg/1280px-EU27-2020_European_Union_map.svg.png"
+                        data-description="The VITAL Burden of Disease (BoD) database is an interactive tool developed under the Vaccines and InfecTious diseases in the Ageing popuLation (IMI2-VITAL) project. This initiative addresses the pressing challenge of enhancing vaccine efficacy to protect the growing ageing population against infectious diseases.
+Focusing on adults aged 50 and above, this database complement available data sources to provides comprehensive data on the burden of vaccine-preventable infectious diseases, including metrics such as incidence, mortality, and disability-adjusted life years (DALYs)."
+                        data-match="95% Match" data-genre="Public Engagement" data-location="Europe"
+                        data-audience="Data Scientists, Public Health"
+                        data-link="https://vital-bod.shinyapps.io/bod50/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/EU27-2020_European_Union_map.svg/1280px-EU27-2020_European_Union_map.svg.png"
+                            class="rounded-md object-cover w-full h-full" alt="VITAL">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <p class="text-xs text-white font-semibold truncate">IMI-VITAL interactive dashboard</p>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Europe</span>
+                                <span
+                                    class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2023-2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Health in the Backyard -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="Health in the Backyard"
+                        data-image="https://mesh.tghn.org/site_media/media/medialibrary/2016/03/4_image.jpg"
+                        data-description="Health in the Backyard is an interactive media project using digital story telling methods to explore the attitudes and perceptions of risk of communities involved in animal husbandry. The Health in the Backyard project supports the activities of the OUCRU research project on zoonotic diseases (Vietnam Initiative on Zoonotic Infections or VIZIONS) by engaging with rural communities involved in animal farming practices, and to improve communication between stakeholders and scientists."
+                        data-match="95% Match" data-genre="Public Engagement" data-location="Vietnam"
+                        data-audience="Rural Communities" data-link="https://www.youtube.com/watch?v=BfoUgpqMJoM">
+                        <img src="https://mesh.tghn.org/site_media/media/medialibrary/2016/03/4_image.jpg"
+                            class="rounded-md object-cover w-full h-full" alt="VITAL">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <p class="text-xs text-white font-semibold truncate">Health in the Backyard</p>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Vietnam</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: AMR dictionary -->
+                    <div class="group/card relative h-28 min-w-[180px] md:h-36 md:min-w-[260px] bg-zinc-800 rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50"
+                        data-title="Vietnamese AMR Dictionary"
+                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmQQm911g_m2JoIhLdaRy1Obk2XBtlAQjzg&s"
+                        data-description="The AMR dictionary – as physical copies, PDFs, and the website (www.amrdictionary.net)–
+aims to educate and inform the public about antimicrobial resistance, or AMR" data-match="95% Match"
+                        data-genre="Public Engagement" data-location="Vietnam" data-audience="General Public, Students"
+                        data-link="https://www.amrdictionary.net/dictionary.aspx?pageID=103&lang=en-GB">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmQQm911g_m2JoIhLdaRy1Obk2XBtlAQjzg&s"
+                            class="rounded-md object-cover w-full h-full" alt="VITAL">
+                        <div
+                            class="absolute inset-0 bg-black/60 opacity-0 group-hover/card:opacity-100 transition duration-300 rounded-md p-2 flex flex-col justify-end">
+                            <p class="text-xs text-white font-semibold truncate">Vietnamese AMR dictionary</p>
+                            <div class="flex items-center space-x-2 text-[10px] mb-1">
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">Vietnam</span>
+                                <span class="border border-gray-500 px-1 rounded text-gray-300 uppercase">2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Button -->
+                <button
+                    class="absolute top-0 bottom-0 right-0 z-50 m-auto h-full w-14 cursor-pointer opacity-0 transition hover:bg-black/70 group-hover:opacity-100 hidden md:flex items-center justify-center"
+                    onclick="scrollRow('row-4', 'right')">
+                    <i data-lucide="chevron-right"
+                        class="text-white w-12 h-12 md:w-16 md:h-16 transition transform hover:scale-125"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Row 5: Organizations I've worked with -->
+
+        <div class="space-y-2 px-4 md:px-16 my-8">
+            <h2
+                class="text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl cursor-pointer">
+                Organizations I've worked with
+            </h2>
+            <div class="group relative md:-ml-2 flex flex-wrap items-center gap-4">
+                <!-- Cards Wrapper -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:p-2" id="row-5">
+                    <!-- WHO -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1lTARxlqXByccE9jhOl3O3SK6DMh3rB_ohQ&s"
+                            class="object-contain w-full h-full" alt="WHO in Vietnam">
+                    </div>
+
+                    <!-- P95 -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://www.epidemiologie.nl/wp-content/uploads/2024/02/P95_LOGO-Tagline_RGB.png"
+                            class="object-contain w-full h-full" alt="P95">
+                    </div>
+
+                    <!-- IHI -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://www.ihi.europa.eu/themes/custom/itheme/logo.png"
+                            class="object-contain w-full h-full" alt="IHI">
+                    </div>
+                    <!-- GSK -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://be.gsk.com/media/11uhlwwi/gsk-logo.jpg?width=600&format=webp&quality=100&v=1dc0dfaa493b180"
+                            class="object-contain w-full h-full" alt="IHI">
+                    </div>
+                    <!-- Astra  -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://mms.businesswire.com/media/20240206590080/en/484259/5/Logo.jpg?download=1"
+                            class="object-contain w-full h-full" alt="IHI">
+                    </div>
+                    <!-- IVI -->
+                    <!--div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="data:image/png;base64,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"
+                            class="object-contain w-full h-full" alt="IHI">
+                    </div>
+                    <!-- Vinmec -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://play-lh.googleusercontent.com/md6cW57Cj0tU4Dm9L3a9zqoQpbCA1hOCnoL6a4fBLbj6NsB59dDLRAmpVeZTcPC6HKM"
+                            class="object-contain w-full h-full" alt="Vinmec Healthcare System">
+                    </div>
+
+                    <!-- OUCRU -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://img.jobsnepal.com/big/qcSLSoVbHtX9fqx9eW0J911agRu0bavScvxccGh5.png"
+                            class="object-contain w-full h-full" alt="OUCRU">
+                    </div>
+
+                    <!-- Unibas -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="data:image/png;base64,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"
+                            class="object-contain w-full h-full" alt="Unibas">
+                    </div>
+
+                    <!-- Uni cape town -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/University_of_Cape_Town_logo.svg/1280px-University_of_Cape_Town_logo.svg.png"
+                            class="object-contain w-full h-full" alt="Uni Cape Town">
+                    </div>
+
+                    <!-- Uni Maastricht -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Maastricht_University_logo_%282017_new_version%29.svg/3840px-Maastricht_University_logo_%282017_new_version%29.svg.png"
+                            class="object-contain w-full h-full" alt="Maastricht University">
+                    </div>
+
+                    <!-- Uni Sheffield -->
+                    <div
+                        class="relative w-30 h-30 md:w-36 md:h-36 bg-white rounded-md cursor-pointer transition duration-300 hover:scale-110 hover:z-50 p-2 flex items-center justify-center">
+                        <img src="https://www.k-int.com/wp-content/uploads/2018/01/University-of-Sheffield-logo.jpg"
+                            class="object-contain w-full h-full" alt="UniSheffield">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="infoModal" class="fixed inset-0 z-[60] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+        aria-modal="true">
+        <!-- Overlay -->
+        <div class="fixed inset-0 bg-black/70 transition-opacity" onclick="closeModal()"></div>
+
+        <div class="flex min-h-screen items-center justify-center p-4 text-center sm:p-0">
+            <div
+                class="relative transform overflow-hidden rounded-lg bg-[#181818] text-left shadow-xl transition-all sm:my-8 w-full max-w-4xl text-white">
+
+                <!-- Close Button -->
+                <button onclick="closeModal()"
+                    class="absolute top-4 right-4 z-50 rounded-full bg-[#181818] p-2 hover:bg-[#2a2a2a]">
+                    <i data-lucide="x" class="w-6 h-6 text-white"></i>
+                </button>
+
+                <!-- Modal Image Header -->
+                <div class="relative h-[400px] w-full">
+                    <img id="modalImage" src="" alt="Modal Cover" class="h-full w-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#181818] via-transparent to-transparent"></div>
+
+                    <div class="absolute bottom-10 left-10 w-[80%] space-y-4">
+                        <h2 id="modalTitle" class="text-4xl md:text-5xl font-bold drop-shadow-lg">Title</h2>
+                        <div class="flex items-center space-x-3">
+                            <a id="modalLink" href="#" target="_blank"
+                                class="bg-white text-black px-8 py-2 rounded flex items-center font-bold hover:bg-opacity-90 transition">
+                                <i data-lucide="play" class="w-5 h-5 mr-2 fill-black"></i> Learn more
+                            </a>
+                            <button class="border-2 border-gray-500 rounded-full p-2 hover:border-white transition">
+                                <i data-lucide="plus" class="w-5 h-5"></i>
+                            </button>
+                            <button class="border-2 border-gray-500 rounded-full p-2 hover:border-white transition">
+                                <i data-lucide="thumbs-up" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="px-10 pb-10 flex flex-col md:flex-row gap-8">
+                    <!-- Left Column -->
+                    <div class="w-full md:w-[65%] space-y-4">
+                        <div class="flex items-center space-x-3 text-sm">
+                            <span id="modalMatch" class="text-green-400 font-bold">98% Match</span>
+                            <span class="border border-gray-500 px-1 rounded text-xs">HD</span>
+                            <span class="text-gray-400">2023</span>
+                        </div>
+                        <p id="modalDescription" class="text-white text-sm md:text-base leading-relaxed">
+                            Description goes here...
+                        </p>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="w-full md:w-[35%] space-y-3 text-sm">
+                        <div>
+                            <span class="text-gray-500">Genre:</span>
+                            <span id="modalGenre" class="text-white hover:underline cursor-pointer">Social,
+                                Marketing</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-500">Location:</span>
+                            <span id="modalLocation" class="text-white">Vietnam</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-500">Audience:</span>
+                            <span id="modalAudience" class="text-white">Researchers, Policy makers, Environmental
+                                activitists</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Chi Nguyen Portfolio.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.remove('bg-gradient-to-b');
+                navbar.classList.add('bg-netflix-black');
+            } else {
+                navbar.classList.add('bg-gradient-to-b');
+                navbar.classList.remove('bg-netflix-black');
+            }
+        });
+
+        // Modal Logic
+        const modal = document.getElementById('infoModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalMatch = document.getElementById('modalMatch');
+        const modalGenre = document.getElementById('modalGenre');
+        const modalLocation = document.getElementById('modalLocation');
+        const modalAudience = document.getElementById('modalAudience');
+        const modalLink = document.getElementById('modalLink');
+
+        function openModal(element) {
+            const title = element.getAttribute('data-title');
+            const image = element.getAttribute('data-image');
+            const description = element.getAttribute('data-description');
+            const match = element.getAttribute('data-match');
+            const genre = element.getAttribute('data-genre');
+            const location = element.getAttribute('data-location');
+            const audience = element.getAttribute('data-audience');
+            const link = element.getAttribute('data-link');
+
+            modalTitle.innerText = title;
+            modalImage.src = image;
+            modalDescription.innerText = description;
+            modalMatch.innerText = match || '90% Match';
+            modalGenre.innerText = genre || 'Education';
+            modalLocation.innerText = location || 'Vietnam';
+            modalAudience.innerText = audience || 'General Public';
+            modalLink.href = link || '#';
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            lucide.createIcons(); // Refresh icons for modal
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+
+        // Attach click events to all cards (This assumes cards have data attributes)
+        // We will update the HTML to include these attributes next.
+        // For now, let's make the cards clickable via a class selector if specific data is missing
+        const cards = document.querySelectorAll('.group\\/card');
+        cards.forEach(card => {
+            card.addEventListener('click', function () {
+                // Fallback data if attributes are missing
+                const img = this.querySelector('img').src;
+                const title = this.querySelector('p')?.innerText || "Project Details";
+
+                // Check if specific attributes exist, else use defaults
+                if (!this.hasAttribute('data-title')) {
+                    this.setAttribute('data-title', title);
+                    this.setAttribute('data-image', img);
+                    this.setAttribute('data-description', "A detailed look at this project featuring successful strategies and outcomes in the field of epidemiology and public health.");
+                    this.setAttribute('data-match', "95% Match");
+                    this.setAttribute('data-genre', "Research");
+                }
+                openModal(this);
+            });
+        });
+
+        // Horizontal Scroll
+        function scrollRow(rowId, direction) {
+            const row = document.getElementById(rowId);
+            const scrollAmount = window.innerWidth / 2; // Scroll half screen width
+            if (direction === 'left') {
+                row.scrollLeft -= scrollAmount;
+            } else {
+                row.scrollLeft += scrollAmount;
+            }
+        }
+    </script>
+</body>
+
+</html>

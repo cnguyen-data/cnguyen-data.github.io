@@ -1,6 +1,6 @@
-# PhanFlix - Phan Viet Portfolio (Refactored)
+# Chi Nguyen Portfolio (Refactored)
 
-This is a static website clone of phanviet.me, refactored to match the exact design of the provided source code using **Tailwind CSS**.
+This is a static website clone of Netflix.com, refactored to match the exact design of the provided source code using **Tailwind CSS**.
 
 ## Design System
 - **Framework**: Tailwind CSS (via CDN).
@@ -17,3 +17,4 @@ This is a static website clone of phanviet.me, refactored to match the exact des
 ## How to Run
 1. Open `index.html` in any web browser.
 2. Ensure you have an internet connection (to load Tailwind CDN and Images).
+

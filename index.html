@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro - Chi Nguyen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        /* The Zoom Animation */
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(40);
+                opacity: 0;
+            }
+        }
+
+        .animate-zoom {
+            animation: zoomIn 3.5s ease-in forwards;
+            transform-origin: center center;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'netflix-red': '#E50914',
+                    }
+                }
+            }
+        }
+
+        // Redirect after animation
+        setTimeout(() => {
+            window.location.href = 'profiles.html';
+        }, 3400); // Slightly before animation ends for seamless cut
+    </script>
+</head>
+
+<body class="bg-black h-screen w-full flex items-center justify-center overflow-hidden">
+
+    <div
+        class="text-netflix-red font-bebas text-6xl md:text-9xl tracking-widest whitespace-nowrap animate-zoom select-none">
+        CHI NGUYEN
+    </div>
+
+</body>
+
+</html>

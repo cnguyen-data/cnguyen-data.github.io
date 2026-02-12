@@ -1,0 +1,14 @@
+/* Most styles are handled by Tailwind CSS in index.html */
+/* Keeping this file for any specific custom overrides if needed in future */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Optional: Scrollbar hiding for cross-browser support */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

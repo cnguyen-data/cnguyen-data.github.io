@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's Watching? - Curious visitor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .profile-img:hover {
+            border: 3px solid white;
+        }
+
+        .profile-text {
+            color: #808080;
+        }
+
+        .group:hover .profile-text {
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-[#141414] h-screen flex flex-col items-center justify-center text-white">
+
+    <h1 class="text-3xl md:text-5xl font-normal mb-8 md:mb-12 text-center">Who's watching?</h1>
+
+    <div class="flex gap-4 md:gap-8 flex-wrap justify-center">
+
+        <!-- Profile 1 -->
+        <a href="browse.html" class="group flex flex-col items-center gap-4 cursor-pointer w-32 md:w-40">
+            <div
+                class="w-24 h-24 md:w-32 md:h-32 rounded overflow-hidden profile-img box-border border-transparent border-2">
+                <img src="https://media.istockphoto.com/id/1296141686/vector/black-cat-kitten-head-face-silhouette-looking-up-kawaii-animal-cute-cartoon-baby-character.jpg?s=612x612&w=0&k=20&c=Xnb_4HRj7srKP3SF__uyCe7Jpsw58LBLnpH6LJrfzYM="
+                    alt="Curious visitor" class="w-full h-full object-cover">
+            </div>
+            <span class="text-lg profile-text transition-colors duration-200">Curious visitor</span>
+        </a>
+
+    </div>
+
+
+</body>
+
+</html>
